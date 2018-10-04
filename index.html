@@ -41,60 +41,45 @@
     <!--CONTACT-->
     <!--FIN CONTACT-->
     <!--FOOTER-->
-	<div id="colfoot">
-		    <div class="container">
-		        <div class="row">
-		            <h3 class="footertext">Nous Contacter :</h3>
-		            <br>
-		              <div class="col-12 col-md-6">
-		                <center>
-		                  <br>
-		                  <h4 class="footertext">Numéro de Téléphonne</h4>
-		                  <p class="footertext">02 35 42 39 33<br>
-		                </center>
-		              </div>
-		              <div class="col-12 col-md-6">
-		                <center>
-		                  <br>
-		                  <h4 class="footertext">Adresse</h4>
-		                  <p class="footertext"><script src='https://maps.googleapis.com/maps/api/js?v=3.exp%27%3E'></script>
-									        <div style='overflow:hidden;height:440px;width:700px;'>
-									            <div id='gmap_canvas' style='height:440px;width:700px;'></div>
-									            <div>
-									                <small>
-									                    <a href="https://embedgooglemaps.com/it/%22%3Eembedgooglemaps">EN</a>
-									                </small>
-									            </div>
-									            <div>
-									                <small>
-									                    <a href="http://botonmegusta.org/%22%3Eboton">megusta</a>
-									                </small>
-									            </div>
-									            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-									        </div>
-									        <script type='text/javascript'>
-									        function init_map(){var myOptions = {
-									            zoom:15,
-									            center:new google.maps.LatLng(49.4908508,0.11844320000000153),
-									            mapTypeId: google.maps.MapTypeId.ROADMAP};
-									            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-									            marker = new google.maps.Marker({
-									                map: map,position: new google.maps.LatLng(49.4908508,0.11844320000000153)});
-									                infowindow = new google.maps.InfoWindow({
-									                    content:'<strong>Titre</strong><br>153 quai George V, 76600, Le Havre, France<br>'
-									                });
-									                google.maps.event.addListener(marker, 'click', function(){
-									                    infowindow.open(map,marker);
-									                });
-									                infowindow.open(map,marker);
-									            }
-									            google.maps.event.addDomListener(window, 'load', init_map);
-									        </script>
-		                </center>
-		              </div>
-		            </div>
-    </div>
+		<footer id="footer">
+<div id="adrcont">
+		    <ul class="footcent">
+		        <li>
+		            <p class="home">Hanami Sushi</p>
+		            <a class="logo" href="#">Hanami Sushi <i>&copy; 2018</i></a>
+		        </li>
+		        <li>
+		            <p class="services">Téléphonne</p>
+
+		            <ul>
+		                <li><a href="#">02 35 42 39 33</a></li>
+		            </ul>
+		        </li>
+		        <li>
+		            <p class="reachus">Adresse</p>
+									<script type='text/javascript'>
+									function init_map(){var myOptions = {
+											zoom:15,
+											center:new google.maps.LatLng(49.4908508,0.11844320000000153),
+											mapTypeId: google.maps.MapTypeId.ROADMAP};
+											map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+											marker = new google.maps.Marker({
+													map: map,position: new google.maps.LatLng(49.4908508,0.11844320000000153)});
+													infowindow = new google.maps.InfoWindow({
+															content:'<strong>Titre</strong><br>153 quai George V, 76600, Le Havre, France<br>'
+													});
+													google.maps.event.addListener(marker, 'click', function(){
+															infowindow.open(map,marker);
+													});
+													infowindow.open(map,marker);
+											}
+											google.maps.event.addDomListener(window, 'load', init_map);
+									</script>
+		        </li>
+		    </ul>
 </div>
+		</footer>
+<!---->
     <!--FIN FOOTER-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
