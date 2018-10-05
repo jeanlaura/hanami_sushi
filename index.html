@@ -1,29 +1,179 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" />
-    <link href="import/css/navbar.css" rel="stylesheet" />
-  	<link type="text/css" rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-	</head>
-  <body>
-    <!--NAVBAR-->
-    <!--FIN NAVBAR-->
-    <!--PRESENTATION-->
-    <!--FIN PRESENTATION-->
-    <!--CARTE-->
-    <!--FIN CARTE-->
-    <!--CONTACT-->
-    <!--FIN CONTACT-->
-    <!--FOOTER-->
-    <!--FIN FOOTER-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" />
+	<link href="import/css/navbar.css" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/shopping-cart.css" />
+	<link rel="stylesheet" href="css/personnal-info.css" />
+</head>
+<body>
+	<!--NAVBAR-->
+	<!--FIN NAVBAR-->
+	<!--PRESENTATION-->
+	<!--FIN PRESENTATION-->
+	<!--CARTE-->
+	<!--FIN CARTE-->
+	<!--CONTACT-->
+	<main class="page">
+		<section class="shopping-cart dark parallax">
+			<div class="container">
+				<div class="block-heading">
+					<h2>Votre commande</h2>
+					<p><strong>Veuillez vérifier votre commande et remplir vos coordonnées.</strong></p>
+				</div>
+				<div class="content">
+					<div class="row">
+						<div class="col-md-12 col-lg-8">
+							<div class="items">
+								<div class="product">
+									<div class="row">
+										<div class="col-md-3">
+											<img class="img-fluid mx-auto d-block image" src="assets/saumon_class_maki_cal.png" alt="saumon classique">
+										</div>
+										<div class="col-md-8">
+											<div class="info">
+												<div class="row">
+													<div class="col-md-5 product-name">
+														<div class="product-name">
+															<a class="name-product" href="#">Saumon classique</a>
+															<div class="product-info">
+																<div><span class="value">5</span>Suhi saumon</div>
+																<div><span class="value">6</span>California saumon avocat</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 quantity">
+														<label for="quantity1">Quantité :</label>
+														<input id="quantity1" type="number" value ="1" class="form-control quantity-input">
+													</div>
+													<div class="col-md-3 price">
+														<span>€11.50</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product">
+									<div class="row">
+										<div class="col-md-3">
+											<img class="img-fluid mx-auto d-block image" src="assets/maki_mixte.png" alt="maki mixte">
+										</div>
+										<div class="col-md-8">
+											<div class="info">
+												<div class="row">
+													<div class="col-md-5 product-name">
+														<div class="product-name">
+															<a class="name-product" href="#">Maki mixte</a>
+															<div class="product-info">
+																<div><span class="value">6</span>Maki thon</div>
+																<div><span class="value">6</span>Maki saumon</div>
+																<div><span class="value">6</span>Maki concombre</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 quantity">
+														<label for="quantity2">Quantité :</label>
+														<input id="quantity2" type="number" value ="1" class="form-control quantity-input">
+													</div>
+													<div class="col-md-3 price">
+														<span>€11.50</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product">
+									<div class="row">
+										<div class="col-md-3">
+											<img class="img-fluid mx-auto d-block image" src="assets/sushi_cal.jpg" alt="California mixte">
+										</div>
+										<div class="col-md-8">
+											<div class="info">
+												<div class="row">
+													<div class="col-md-5 product-name">
+														<div class="product-name">
+															<a class="name-product" href="#">Colifornia mixte</a>
+															<div class="product-info">
+																<div><span class="value">6</span>Maki saumon concombre cheese</div>
+																<div><span class="value">6</span>California saumon avocat</div>
+																<div><span class="value">6</span>California surimi avocat</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 quantity">
+														<label for="quantity3">Quantité :</label>
+														<input id="quantity3" type="number" value ="1" class="form-control quantity-input">
+													</div>
+													<div class="col-md-3 price">
+														<span>€14.00</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-4">
+							<!-- Infos personnelles -->
+							<form class="infoProvider form-horizontal">
+								<fieldset>
+									<div class="form-group">
+										<label class="col-md-12 control-label">Nom &amp; Prénom<span class="asteriskField">*</span></label>
+										<div class="col-md-12 inputGroupContainer">
+											<div class="input-group"><span class="input-group-addon"><i class="fas fa-user icon"></i></span><input id="fullName" name="fullName" placeholder="John Doe" class="form-control" required value="" type="text"></div>
+										</div>
+									</div>
+									<div class="form-group ">
+										<label class="col-md-12 control-label" for="date">Horaire de passage<span class="asteriskField">*</span></label>
+										<div class="col-md-12 inputGroupContainer">
+											<div class="input-group"><div class="input-group-addon"><i class="fas fa-clock icon"></i></div>
+											<input class="form-control" id="date" name="date" placeholder="12:00" type="text"/>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label">Email<span class="asteriskField">*</span></label>
+									<div class="col-md-12 inputGroupContainer">
+										<div class="input-group"><span class="input-group-addon"><i class="fas fa-at icon"></i></span><input id="email" name="email" placeholder="john.doe@mymail.com" class="form-control" required value="" type="text"></div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label">Téléphone<span class="asteriskField">*</span></label>
+									<div class="col-md-12 inputGroupContainer">
+										<div class="input-group"><span class="input-group-addon"><i class="fas fa-phone-square icon"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="0654321012" class="form-control" required value="" type="text"></div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+						<!-- /Infos personnelles -->
+						<div class="summary">
+							<div class="summary-item"><span class="text">Sous-total</span><span class="price">€37.00</span></div>
+							<div class="summary-item"><span class="text">Remise</span><span class="price">-10%</span></div>
+							<div class="summary-item"><span class="text">Total</span><span class="price">€33.30</span></div>
+							<button type="button" class="btn btn-primary btn-lg btn-block" disabled>Commander</button>
+						</div>
+					</div>
+				</div>
+			</div><div  class="col-md-12 obligatory">
+				<span>Les champs marqués d'un astérisque(<span class="asteriskField">*</span>) sont obligatoires.</span>
+			</div>
+			</div>
+	</section>
+</main>
+<!--FIN CONTACT-->
+<!--FOOTER-->
+<!--FIN FOOTER-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>
