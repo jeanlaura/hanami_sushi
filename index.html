@@ -20,7 +20,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto adrlial">
       <li class="nav-item">
         <a class="nav-link adrien" href="#">Présentation</a>
       </li>
@@ -31,55 +31,104 @@
         <a class="nav-link adrien" href="#">Contact</a>
       </li>
     </ul>
+		<i class="fas fa-shopping-cart foosize3"></i>
   </div>
 </nav>
     <!--FIN NAVBAR-->
+		<div class="main-container">
     <!--PRESENTATION-->
+
     <!--FIN PRESENTATION-->
     <!--CARTE-->
     <!--FIN CARTE-->
     <!--CONTACT-->
     <!--FIN CONTACT-->
+	</div>
     <!--FOOTER-->
-		<footer id="footer">
-<div id="adrcont">
-		    <ul class="footcent">
-		        <li>
-		            <p class="home">Hanami Sushi</p>
-		            <a class="logo" href="#">Hanami Sushi <i>&copy; 2018</i></a>
-		        </li>
-		        <li>
-		            <p class="services">Téléphonne</p>
+		<!-- Footer -->
+		<footer class="page-footer font-small teal pt-4 footcolor" id="footcolor">
 
-		            <ul>
-		                <li><a href="#">02 35 42 39 33</a></li>
-		            </ul>
-		        </li>
-		        <li>
-		            <p class="reachus">Adresse</p>
-									<script type='text/javascript'>
-									function init_map(){var myOptions = {
-											zoom:15,
-											center:new google.maps.LatLng(49.4908508,0.11844320000000153),
-											mapTypeId: google.maps.MapTypeId.ROADMAP};
-											map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-											marker = new google.maps.Marker({
-													map: map,position: new google.maps.LatLng(49.4908508,0.11844320000000153)});
-													infowindow = new google.maps.InfoWindow({
-															content:'<strong>Titre</strong><br>153 quai George V, 76600, Le Havre, France<br>'
-													});
-													google.maps.event.addListener(marker, 'click', function(){
-															infowindow.open(map,marker);
-													});
-													infowindow.open(map,marker);
-											}
-											google.maps.event.addDomListener(window, 'load', init_map);
-									</script>
-		        </li>
-		    </ul>
-</div>
-		</footer>
-<!---->
+		    <!-- Footer Text -->
+		    <div class="container-fluid text-center text-md-left">
+
+		      <!-- Grid row -->
+		      <div class="row">
+
+		        <!-- Grid column -->
+		        <div class="col-md-6 mt-md-0 mt-3 footcent">
+
+		          <!-- Content -->
+		          <h5 class="text-uppercase font-weight-bold">Nous Contacter :</h5>
+		          <div>
+		          	<i class="fas fa-phone foosize2"> 02 35 42 39 33</i>
+							</div>
+							<div>
+								<a class="footcolor2 footcolor" href="https://www.facebook.com/pages/Hanami-Sushi/1485077131732711" ><i class="fab fa-facebook-square foosize"></i></a>
+							</div>
+							<div>
+								<a class="footcolor2 footcolor" href="https://www.tripadvisor.fr/Restaurant_Review-g187190-d6153511-Reviews-Hanami_Sushi_Bar-Le_Havre_Seine_Maritime_Haute_Normandie_Normandy.html" ><i class="fab fa-tripadvisor foosize"></i></a>
+		          </div>
+
+		        </div>
+		        <!-- Grid column -->
+
+		        <hr class="clearfix w-100 d-md-none pb-3">
+
+		        <!-- Grid column -->
+		        <div class="col-md-6 mb-md-0 mb-3">
+
+		          <!-- Content -->
+		          <h5 class="text-uppercase font-weight-bold footcent">On est ici :</h5>
+							<a id="googleMapsA" class="footcolor2 footcolor" href="https://www.google.com/maps?client=ubuntu&channel=fs&q=hanami+sushi&oe=utf-8&um=1&ie=UTF-8&sa=X&ved=0ahUKEwifmf-mgu_dAhUNesAKHZjkDx0Q_AUIDigB"><i class="fas fa-map-marker-alt"></i> 153 Quai George V, 76600 Le Havre</a>
+							<script src='https://maps.googleapis.com/maps/api/js?v=3.exp%27%3E'></script>
+        <div class="contefoot">
+            <div id="gmap_canvas"></div>
+            <div>
+                <small>
+                    <a href="https://embedgooglemaps.com/it/%22%3Eembedgooglemaps">FR</a>
+                </small>
+            </div>
+            <div>
+                <small>
+                    <a href="http://botonmegusta.org/%22%3Eboton">megusta</a>
+                </small>
+            </div>
+            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+        </div>
+				<div class="map">
+        <script class="sidebar" type='text/javascript'>
+        function init_map(){var myOptions = {
+            zoom:15,
+            center:new google.maps.LatLng(49.4908508,0.11844320000000153),
+            mapTypeId: google.maps.MapTypeId.ROADMAP};
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+            marker = new google.maps.Marker({
+                map: map,position: new google.maps.LatLng(49.4908508,0.11844320000000153)});
+                infowindow = new google.maps.InfoWindow({
+                    content:'<strong>Titre</strong><br>153 quai George V, 76600, Le Havre, France<br>'
+                });
+                google.maps.event.addListener(marker, 'click', function(){
+                    infowindow.open(map,marker);
+                });
+                infowindow.open(map,marker);
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
+
+			</div>
+		        </div>
+		        <!-- Grid column -->
+
+		      </div>
+		      <!-- Grid row -->
+
+		    </div>
+		    <!-- Footer Text -->
+
+		    <!-- Copyright -->
+		    <div class="footer-copyright text-center py-3">© 2018 Copyright : Ryo</div>
+		    <!-- Copyright -->
+		  </footer>
     <!--FIN FOOTER-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
