@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+		<title>HANAMI SUSHI BAR</title>
+		<link rel="shortcut icon" type="image/png" href="assets/Logo3.png"/>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link href="import/css/navbar.css" rel="stylesheet" />
   	<link type="text/css" rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
@@ -14,24 +17,24 @@
   <body>
     <!--NAVBAR-->
 		<nav class="navbar navbar-expand-lg fixed-top" id="adrnav">
-  <a class="navbar-brand" href="#"><img src="assets\Logo3.png" class="adrLogo"></img></a>
+  <a class="navbar-brand" href="#"><img src="assets/Logo3.png" class="adrLogo" alt="LOGO" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"><i class="fas fa-home adrHome"></i></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto adrlial">
-      <li class="nav-item">
+      <li class="nav-item liadri">
         <a class="nav-link adrien" href="#">Présentation</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link adrien" href="#">Carte</a>
+      <li class="nav-item liadri">
+        <a class="nav-link adrien" href="#carte">Carte</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link adrien" href="#">Contact</a>
+      <li class="nav-item liadri ">
+        <a class="nav-link adrien" href="#contactancre">Contact</a>
       </li>
     </ul>
-		<i class="fas fa-shopping-cart foosize3"></i>
+		<a href="#contactancre"><i class="fas fa-shopping-cart foosize3"></i></a>
   </div>
 </nav>
     <!--FIN NAVBAR-->
@@ -41,28 +44,28 @@
 			<div id="carouselExampleControls" class="carousel slide mx-auto" data-ride="carousel">
 			  <div id="carouselInner" class="carousel-inner">
 			    <div class="carousel-item active">
-			      <img id="img" class="d-block w-100 img-responsive" src="assets/photo22.png" alt="La salle">
+			      <img id="img1" class="d-block w-100 img-responsive" src="assets/photo22.png" alt="La salle">
 						<div class="carousel-caption d-md-block">
 							<h1 id="h1HANAMI" class="animate fadeInDown one">HANAMI SUSHI BAR</h1>
 							<p class="animate fadeInUp two">Le Bar à Sushi vous accueille du lundi au vendredi de 11h00 à 20h30 !</p>
 						</div>
 			    </div>
 					<div class="carousel-item">
-			      <img id="img" class="d-block w-100" src="assets/photo111.png" alt="Savoir-faire">
+			      <img id="img2" class="d-block w-100" src="assets/photo111.png" alt="Savoir-faire">
 						<div class="carousel-caption d-md-block">
 							<h1 id="h1Savoir" class="animate fadeInDown one">UN SAVOIR-FAIRE JAPONAIS</h1>
 							<p id="pSavoir" class="animate fadeInUp two">De nationnalité Cambodgienne, le chef acquiert son savoir-faire d'un maître japonais et exerce depuis des années avec succès.</p>
 						</div>
 			    </div>
 			    <div class="carousel-item">
-			      <img id="img" class="d-block w-100 imgPF" src="assets/photo44.png" alt="Produits frais">
+			      <img id="img3" class="d-block w-100 imgPF" src="assets/photo44.png" alt="Produits frais">
 						<div class="carousel-caption d-md-block">
 							<h1 id="h1Produit" class="animate fadeInDown one">PRODUIT FRAIS</h1>
 							<p class="animate fadeInUp two">Le chef utilise, tous les jours, des produits frais pour des préparations savoureuses et de qualité.</p>
 						</div>
 			    </div>
 					<div class="carousel-item">
-			      <img id="img" class="d-block w-100" src="assets/photo33.png" alt="Fais maison">
+			      <img id="img4" class="d-block w-100" src="assets/photo33.png" alt="Fais maison">
 						<div class="carousel-caption d-md-block">
 							<h1 id="h1Maison" class="animate fadeInDown one">FAIT MAISON</h1>
 							<p id="pMaison" class="animate fadeInUp two">Pour mettre en valeur ses produits frais dans la tradition japonnaise, chaque plat est préparé dans le pur respect de la tradition culinaire asiatique. Le fait maison est donc le maître mot de ce restaurant.</p>
@@ -88,7 +91,7 @@
 				<h2 class="text-center col-md-2" id="titrecarte">CARTE</h2>
 				<hr class="col-md-4" id="separation2" />
 			</div>
-			<div class="row"><h3>LES FORMULES (Soupe miso & salade de choux offerts)</h2>
+			<div class="row"><h3 id="formules1">LES FORMULES (Soupe miso & salade de choux offerts)</h3>
 			<hr class="col-md-4" id ="separation3"/>
 			</div>
 			<div class="row">
@@ -96,7 +99,7 @@
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case1">
 						<div class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/sushi.png" width="68px" alt="">
+								<img src="assets/sushi.png" width="68" alt="SUSHI">
 							</div>
 							<div class="our-services-text">
 								<h4>SAUMON CLASSIQUE</h4>
@@ -109,7 +112,7 @@
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case2">
 						<div class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/sushi.png" width="68px" alt="">
+								<img src="assets/sushi.png" width="68" alt="SUSHI2">
 							</div>
 							<div class="our-services-text">
 								<h4>DUO CLASSIQUE</h4>
@@ -122,7 +125,7 @@
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case3">
 						<div class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/sushi.png" width="68px" alt="">
+								<img src="assets/sushi.png" width="68" alt="SUSHI3">
 							</div>
 							<div class="our-services-text">
 								<h4>SUSHI SAUMON</h4>
@@ -135,7 +138,7 @@
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case4">
 						<div class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/sushi.png" width="68px" alt="">
+								<img src="assets/sushi.png" width="68" alt="SUSHI4">
 							</div>
 							<div class="our-services-text">
 								<h4>DUO SUSHI</h4>
@@ -148,7 +151,7 @@
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case5">
 						<div class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/maki.png" width="68px" alt="">
+								<img src="assets/maki.png" width="68" alt="MAKI">
 							</div>
 							<div class="our-services-text">
 								<h4>MAKI MIXTE</h4>
@@ -159,9 +162,9 @@
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case6">
-						<div class="services-inner">
+						<div id="heightCase6" class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/maki.png" width="68px" alt="">
+								<img src="assets/maki.png" width="68" alt="MAKI2">
 							</div>
 							<div class="our-services-text">
 								<h4>CALIFORNIA MIXTE</h4>
@@ -175,15 +178,15 @@
 		<!--début mini formule-->
 		<div class="container">
 			<div class="row">
-					<hr class="col-md-3" id ="separation3"/>
-					<h3>LES MINI-FORMULES (Soupe miso ou salade de choux offerts)</h3>
+					<hr class="col-md-3" id ="separation4"/>
+					<h3 id="formules2">LES MINI-FORMULES (Soupe miso ou salade de choux offerts)</h3>
 			</div>
 			<div class="row">
 				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case7">
 						<div class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/sushi.png" width="68px" alt="">
+								<img src="assets/sushi.png" width="68" alt="SUSHI5">
 							</div>
 							<div class="our-services-text">
 								<h4>SUSHI MASSAGO ROLL</h4>
@@ -194,9 +197,9 @@
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case8">
-						<div class="services-inner">
+						<div id="heightCase8" class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/maki.png" width="68px" alt="">
+								<img src="assets/maki.png" width="68" alt="MAKI3">
 							</div>
 							<div class="our-services-text">
 								<h4>Umé</h4>
@@ -209,7 +212,7 @@
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case9">
 						<div class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/sushi.png" width="68px" alt="">
+								<img src="assets/sushi.png" width="68" alt="SUSHI6">
 							</div>
 							<div class="our-services-text">
 								<h4>Nara</h4>
@@ -222,7 +225,7 @@
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case10">
 						<div class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/maki.png" width="68px" alt="">
+								<img src="assets/maki.png" width="68" alt="MAKI4">
 							</div>
 							<div class="our-services-text">
 								<h4>Bara</h4>
@@ -235,7 +238,7 @@
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case11">
 						<div class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/sushi.png" width="68px" alt="">
+								<img src="assets/sushi.png" width="68" alt="SUSHI7">
 							</div>
 							<div class="our-services-text">
 								<h4>Sakura</h4>
@@ -248,7 +251,7 @@
 					<div class="our-services-wrapper mb-60 animated fadeIn" id="case12">
 						<div class="services-inner">
 							<div class="our-services-img">
-								<img src="assets/maki.png" width="68px" alt="">
+								<img src="assets/maki.png" width="68" alt="MAKI5">
 							</div>
 							<div class="our-services-text">
 								<h4>Maki pané</h4>
@@ -263,7 +266,7 @@
     <!--FIN CARTE-->
     <!--CONTACT-->
 		<main class="page">
-			<section class="shopping-cart dark parallax">
+			<section class="shopping-cart dark parallax" id="contactancre">
 				<div class="container">
 					<div class="block-heading">
 						<h2>Votre commande</h2>
@@ -371,27 +374,31 @@
 										<div class="form-group">
 											<label class="col-md-12 control-label">Nom &amp; Prénom<span class="asteriskField">*</span></label>
 											<div class="col-md-12 inputGroupContainer">
-												<div class="input-group"><span class="input-group-addon"><i class="fas fa-user icon"></i></span><input id="fullName" name="fullName" placeholder="John Doe" class="form-control" required value="" type="text"></div>
+												<span class="input-group-addon"><i class="fas fa-user icon"></i></span>
+												<div class="input-group"><input id="fullName" name="fullName" placeholder="John Doe" class="form-control" required value="" type="text"></div>
 											</div>
 										</div>
 										<div class="form-group ">
 											<label class="col-md-12 control-label" for="date">Horaire de passage<span class="asteriskField">*</span></label>
 											<div class="col-md-12 inputGroupContainer">
-												<div class="input-group"><div class="input-group-addon"><i class="fas fa-clock icon"></i></div>
-												<input class="form-control" id="date" name="date" placeholder="12:00" type="text"/>
-											</div>
+												<span class="input-group-addon"><i class="fas fa-clock icon"></i></span>
+												<div class="input-group">
+													<input class="form-control" id="date" name="date" placeholder="12:00" type="text"/>
+												</div>
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-4 control-label">Email<span class="asteriskField">*</span></label>
 										<div class="col-md-12 inputGroupContainer">
-											<div class="input-group"><span class="input-group-addon"><i class="fas fa-at icon"></i></span><input id="email" name="email" placeholder="john.doe@mymail.com" class="form-control" required value="" type="text"></div>
+											<span class="input-group-addon"><i class="fas fa-at icon"></i></span>
+											<div class="input-group"><input id="email" name="email" placeholder="john.doe@mymail.com" class="form-control" required value="" type="text"></div>
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-4 control-label">Téléphone<span class="asteriskField">*</span></label>
 										<div class="col-md-12 inputGroupContainer">
-											<div class="input-group"><span class="input-group-addon"><i class="fas fa-phone-square icon"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="0654321012" class="form-control" required value="" type="text"></div>
+											<span class="input-group-addon"><i class="fas fa-phone-square icon"></i></span>
+											<div class="input-group"><input id="phoneNumber" name="phoneNumber" placeholder="0654321012" class="form-control" required value="" type="text"></div>
 										</div>
 									</div>
 								</fieldset>
@@ -465,8 +472,8 @@
             <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
         </div>
 				<div class="map">
-        <script class="sidebar" type='text/javascript'>
-        function init_map(){var myOptions = {
+        <script class="sidebar">
+        	function init_map(){var myOptions = {
             zoom:15,
             center:new google.maps.LatLng(49.4908508,0.11844320000000153),
             mapTypeId: google.maps.MapTypeId.ROADMAP};
@@ -474,7 +481,7 @@
             marker = new google.maps.Marker({
                 map: map,position: new google.maps.LatLng(49.4908508,0.11844320000000153)});
                 infowindow = new google.maps.InfoWindow({
-                    content:'<strong>Titre</strong><br>153 quai George V, 76600, Le Havre, France<br>'
+                    content:'<strong>HANAMI SUSHI BAR</strong><br>153 quai George V, 76600, Le Havre, France<br>'
                 });
                 google.maps.event.addListener(marker, 'click', function(){
                     infowindow.open(map,marker);
