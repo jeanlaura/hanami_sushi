@@ -1,208 +1,362 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" />
-	<link href="import/css/navbar.css" rel="stylesheet" />
-	<link type="text/css" rel="stylesheet" href="main.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-</head>
-<body>
-	<!--NAVBAR-->
-	<!--FIN NAVBAR-->
-	<!--PRESENTATION-->
-	<!--FIN PRESENTATION-->
-	<!--CARTE-->
-	<div id="carte">
-	<div class="container">
-		<div class="row">
-			<hr class="col-md-4" id="separation1" />
-			<h2 class="text-center col-md-2" id="titrecarte">CARTE</h2>
-			<hr class="col-md-4" id="separation2" />
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" />
+    <link href="import/css/navbar.css" rel="stylesheet" />
+  	<link type="text/css" rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+	</head>
+  <body>
+    <!--NAVBAR-->
+		<nav class="navbar navbar-expand-lg fixed-top" id="adrnav">
+  <a class="navbar-brand" href="#"><img src="assets\Logo3.png" class="adrLogo"></img></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fas fa-home adrHome"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto adrlial">
+      <li class="nav-item">
+        <a class="nav-link adrien" href="#">Présentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link adrien" href="#">Carte</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link adrien" href="#">Contact</a>
+      </li>
+    </ul>
+		<i class="fas fa-shopping-cart foosize3"></i>
+  </div>
+</nav>
+    <!--FIN NAVBAR-->
+		<div class="main-container">
+    <!--PRESENTATION-->
+		<section id="presentation" class="">
+			<div id="carouselExampleControls" class="carousel slide mx-auto" data-ride="carousel">
+			  <div id="carouselInner" class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img id="img" class="d-block w-100 img-responsive" src="assets/photo22.png" alt="La salle">
+						<div class="carousel-caption d-md-block">
+							<h1 id="h1HANAMI" class="animate fadeInDown one">HANAMI SUSHI BAR</h1>
+							<p class="animate fadeInUp two">Le Bar à Sushi vous accueille du lundi au vendredi de 11h00 à 20h30 !</p>
+						</div>
+			    </div>
+					<div class="carousel-item">
+			      <img id="img" class="d-block w-100" src="assets/photo111.png" alt="Savoir-faire">
+						<div class="carousel-caption d-md-block">
+							<h1 id="h1Savoir" class="animate fadeInDown one">UN SAVOIR-FAIRE JAPONAIS</h1>
+							<p id="pSavoir" class="animate fadeInUp two">De nationnalité Cambodgienne, le chef acquiert son savoir-faire d'un maître japonais et exerce depuis des années avec succès.</p>
+						</div>
+			    </div>
+			    <div class="carousel-item">
+			      <img id="img" class="d-block w-100 imgPF" src="assets/photo44.png" alt="Produits frais">
+						<div class="carousel-caption d-md-block">
+							<h1 id="h1Produit" class="animate fadeInDown one">PRODUIT FRAIS</h1>
+							<p class="animate fadeInUp two">Le chef utilise, tous les jours, des produits frais pour des préparations savoureuses et de qualité.</p>
+						</div>
+			    </div>
+					<div class="carousel-item">
+			      <img id="img" class="d-block w-100" src="assets/photo33.png" alt="Fais maison">
+						<div class="carousel-caption d-md-block">
+							<h1 id="h1Maison" class="animate fadeInDown one">FAIT MAISON</h1>
+							<p id="pMaison" class="animate fadeInUp two">Pour mettre en valeur ses produits frais dans la tradition japonnaise, chaque plat est préparé dans le pur respect de la tradition culinaire asiatique. Le fait maison est donc le maître mot de ce restaurant.</p>
+						</div>
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev carouselButton" href="#carouselExampleControls" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next carouselButton" href="#carouselExampleControls" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</section>
+    <!--FIN PRESENTATION-->
+    <!--CARTE-->
+		<div id="carte">
+		<div class="container">
+			<div class="row">
+				<hr class="col-md-4" id="separation1" />
+				<h2 class="text-center col-md-2" id="titrecarte">CARTE</h2>
+				<hr class="col-md-4" id="separation2" />
+			</div>
+			<div class="row"><h3>LES FORMULES (Soupe miso & salade de choux offerts)</h2>
+			<hr class="col-md-4" id ="separation3"/>
+			</div>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case1">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/sushi.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>SAUMON CLASSIQUE</h4>
+								<p>5 sushi saumon<br />6 california saumon avocat<br/><br /><p class="prix text-right font-weight-bold">11.50€</p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case2">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/sushi.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>DUO CLASSIQUE</h4>
+								<p>5 sushi : 3 thon, 2 saumon<br />6 california saumon avocat<br /><br /><p class="prix text-right font-weight-bold">12.00€</p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case3">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/sushi.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>SUSHI SAUMON</h4>
+								<p>8 pièces<br /><br /><br /><p class="prix text-right font-weight-bold">12.50€</p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case4">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/sushi.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>DUO SUSHI</h4>
+								<p>4 sushi saumon<br />4 sushi thon<br /><br /><p class="prix text-right font-weight-bold">13.00€</p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case5">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/maki.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>MAKI MIXTE</h4>
+								<p>6 maki thon<br />6 maki saumon<br />6 maki concombre<br /><p class="prix text-right font-weight-bold">11.50€</p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case6">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/maki.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>CALIFORNIA MIXTE</h4>
+								<p>6 maki saumon concombre cheese<br />6 california saumon avocat<br />6 california surimi avocat<br /><p class="prix text-right font-weight-bold">14.00€</p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="row"><h3>LES FORMULES (Soupe miso & salade de choux offerts)</h2>
-		<hr class="col-md-4" id ="separation3"/>
-		</div>
-		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case1">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/sushi.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>SAUMON CLASSIQUE</h4>
-							<p>5 sushi saumon<br />6 california saumon avocat<br/><br /><p class="prix text-right font-weight-bold">11.50€</p></p>
+		<!--début mini formule-->
+		<div class="container">
+			<div class="row">
+					<hr class="col-md-3" id ="separation3"/>
+					<h3>LES MINI-FORMULES (Soupe miso ou salade de choux offerts)</h3>
+			</div>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case7">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/sushi.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>SUSHI MASSAGO ROLL</h4>
+								<p>6 california saumon avocat recouverts de massago<br />3 sushi saumon<br/><p class="prix text-right font-weight-bold">11.00€</p></p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case2">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/sushi.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>DUO CLASSIQUE</h4>
-							<p>5 sushi : 3 thon, 2 saumon<br />6 california saumon avocat<br /><br /><p class="prix text-right font-weight-bold">12.00€</p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case3">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/sushi.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>SUSHI SAUMON</h4>
-							<p>8 pièces<br /><br /><br /><p class="prix text-right font-weight-bold">12.50€</p></p>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case8">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/maki.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>Umé</h4>
+								<p>3 sushi : 1 thon, 1 saumon, 1 crevette<br />3 maki saumon concombre cheese<br />3 maki tartare saumon épinard<br /><p class="prix text-right font-weight-bold">11.00€</p></p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case4">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/sushi.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>DUO SUSHI</h4>
-							<p>4 sushi saumon<br />4 sushi thon<br /><br /><p class="prix text-right font-weight-bold">13.00€</p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case5">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/maki.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>MAKI MIXTE</h4>
-							<p>6 maki thon<br />6 maki saumon<br />6 maki concombre<br /><p class="prix text-right font-weight-bold">11.50€</p></p>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case9">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/sushi.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>Nara</h4>
+								<p>6 california thon avocat<br />6 maki tartare thon ciboulette<br /><br /><p class="prix text-right font-weight-bold">10.00€</p></p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case6">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/maki.png" width="68px" alt="">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case10">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/maki.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>Bara</h4>
+								<p>6 maki saumon concombre cheese<br />6 maki tartare saumon épinard<br /><br /><p class="prix text-right font-weight-bold">10.00€</p></p>
+							</div>
 						</div>
-						<div class="our-services-text">
-							<h4>CALIFORNIA MIXTE</h4>
-							<p>6 maki saumon concombre cheese<br />6 california saumon avocat<br />6 california surimi avocat<br /><p class="prix text-right font-weight-bold">14.00€</p></p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case11">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/sushi.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>Sakura</h4>
+								<p>6 california saumon avocat<br />6 maki tartare saumon épinard<br /><br /><p class="prix text-right font-weight-bold">9.00€</p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+					<div class="our-services-wrapper mb-60 animated fadeIn" id="case12">
+						<div class="services-inner">
+							<div class="our-services-img">
+								<img src="assets/maki.png" width="68px" alt="">
+							</div>
+							<div class="our-services-text">
+								<h4>Maki pané</h4>
+								<p>6 maki thon<br />6 maki saumon<br /><br /><p class="prix text-right font-weight-bold">10.00€</p></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--début mini formule-->
-	<div class="container">
-		<div class="row">
-				<hr class="col-md-3" id ="separation3"/>
-				<h3>LES MINI-FORMULES (Soupe miso ou salade de choux offerts)</h3>
-		</div>
-		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case7">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/sushi.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>SUSHI MASSAGO ROLL</h4>
-							<p>6 california saumon avocat recouverts de massago<br />3 sushi saumon<br/><p class="prix text-right font-weight-bold">11.00€</p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case8">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/maki.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>Umé</h4>
-							<p>3 sushi : 1 thon, 1 saumon, 1 crevette<br />3 maki saumon concombre cheese<br />3 maki tartare saumon épinard<br /><p class="prix text-right font-weight-bold">11.00€</p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case9">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/sushi.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>Nara</h4>
-							<p>6 california thon avocat<br />6 maki tartare thon ciboulette<br /><br /><p class="prix text-right font-weight-bold">10.00€</p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case10">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/maki.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>Bara</h4>
-							<p>6 maki saumon concombre cheese<br />6 maki tartare saumon épinard<br /><br /><p class="prix text-right font-weight-bold">10.00€</p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case11">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/sushi.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>Sakura</h4>
-							<p>6 california saumon avocat<br />6 maki tartare saumon épinard<br /><br /><p class="prix text-right font-weight-bold">9.00€</p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-				<div class="our-services-wrapper mb-60 animated fadeIn" id="case12">
-					<div class="services-inner">
-						<div class="our-services-img">
-							<img src="assets/maki.png" width="68px" alt="">
-						</div>
-						<div class="our-services-text">
-							<h4>Maki pané</h4>
-							<p>6 maki thon<br />6 maki saumon<br /><br /><p class="prix text-right font-weight-bold">10.00€</p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!--FIN CARTE-->
+    <!--CONTACT-->
+    <!--FIN CONTACT-->
 	</div>
-</div>
-	<!--FIN CARTE-->
-	<!--CONTACT-->
-	<!--FIN CONTACT-->
-	<!--FOOTER-->
-	<!--FIN FOOTER-->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+    <!--FOOTER-->
+		<!-- Footer -->
+		<footer class="page-footer font-small teal pt-4 footcolor" id="footcolor">
+
+		    <!-- Footer Text -->
+		    <div class="container-fluid text-center text-md-left">
+
+		      <!-- Grid row -->
+		      <div class="row">
+
+		        <!-- Grid column -->
+		        <div class="col-md-6 mt-md-0 mt-3 footcent">
+
+		          <!-- Content -->
+		          <h5 class="text-uppercase font-weight-bold">Nous Contacter :</h5>
+		          <div>
+		          	<i class="fas fa-phone foosize2"> 02 35 42 39 33</i>
+							</div>
+							<div>
+								<a class="footcolor2 footcolor" href="https://www.facebook.com/pages/Hanami-Sushi/1485077131732711" ><i class="fab fa-facebook-square foosize"></i></a>
+							</div>
+							<div>
+								<a class="footcolor2 footcolor" href="https://www.tripadvisor.fr/Restaurant_Review-g187190-d6153511-Reviews-Hanami_Sushi_Bar-Le_Havre_Seine_Maritime_Haute_Normandie_Normandy.html" ><i class="fab fa-tripadvisor foosize"></i></a>
+		          </div>
+
+		        </div>
+		        <!-- Grid column -->
+
+		        <hr class="clearfix w-100 d-md-none pb-3">
+
+		        <!-- Grid column -->
+		        <div class="col-md-6 mb-md-0 mb-3">
+
+		          <!-- Content -->
+		          <h5 class="text-uppercase font-weight-bold footcent">On est ici :</h5>
+							<a id="googleMapsA" class="footcolor2 footcolor" href="https://www.google.com/maps?client=ubuntu&channel=fs&q=hanami+sushi&oe=utf-8&um=1&ie=UTF-8&sa=X&ved=0ahUKEwifmf-mgu_dAhUNesAKHZjkDx0Q_AUIDigB"><i class="fas fa-map-marker-alt"></i> 153 Quai George V, 76600 Le Havre</a>
+							<script src='https://maps.googleapis.com/maps/api/js?v=3.exp%27%3E'></script>
+        <div class="contefoot">
+            <div id="gmap_canvas"></div>
+            <div>
+                <small>
+                    <a href="https://embedgooglemaps.com/it/%22%3Eembedgooglemaps">FR</a>
+                </small>
+            </div>
+            <div>
+                <small>
+                    <a href="http://botonmegusta.org/%22%3Eboton">megusta</a>
+                </small>
+            </div>
+            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+        </div>
+				<div class="map">
+        <script class="sidebar" type='text/javascript'>
+        function init_map(){var myOptions = {
+            zoom:15,
+            center:new google.maps.LatLng(49.4908508,0.11844320000000153),
+            mapTypeId: google.maps.MapTypeId.ROADMAP};
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+            marker = new google.maps.Marker({
+                map: map,position: new google.maps.LatLng(49.4908508,0.11844320000000153)});
+                infowindow = new google.maps.InfoWindow({
+                    content:'<strong>Titre</strong><br>153 quai George V, 76600, Le Havre, France<br>'
+                });
+                google.maps.event.addListener(marker, 'click', function(){
+                    infowindow.open(map,marker);
+                });
+                infowindow.open(map,marker);
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
+
+			</div>
+		        </div>
+		        <!-- Grid column -->
+
+		      </div>
+		      <!-- Grid row -->
+
+		    </div>
+		    <!-- Footer Text -->
+
+		    <!-- Copyright -->
+				<div class="row">
+				<hr class="col-xs-12 col-md-4 hr2018" />
+		    <div class="footer-copyright text-center py-3 col-sm-12 col-md-3">© 2018 Copyright : Ryo</div>
+				<hr class="col-xs-12 col-md-4 hr2018" />
+			</div>
+		    <!-- Copyright -->
+		  </footer>
+    <!--FIN FOOTER-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>

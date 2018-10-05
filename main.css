@@ -1,16 +1,495 @@
 /******************************************************************************/
 /********************************NAVBAR****************************************/
 /******************************************************************************/
-
+.adrien {
+  color: #bc002d;
+}
+#adrnav {
+  background-color: #FFF;
+  box-shadow: 0px 5px 5px gray;
+  text-align:center;
+}
+.adrLogo {
+  height: 3em;
+  width: 3em;
+}
+.adrHome {
+  color: #bc002d;
+  height: 2em;
+  width: auto;
+  padding-top: 5px;
+  padding-right: 5px;
+  font-size: 1.5em;
+}
+ul .adrien:hover {
+  color: #d45c79;
+}
 /******************************************************************************/
 /********************************FIN NAVBAR************************************/
 /******************************************************************************/
-
+.main-container{
+  padding-top: 86px;
+}
 
 /******************************************************************************/
 /********************************PRESENTATION**********************************/
 /******************************************************************************/
+#presentation #carouselExampleControls{
+  width: 1000px;
+  height: 507px;
+}
+#carouselInner{
+  height: 507px;
+}
+#h1HANAMI{
+  margin-bottom: 18rem;
+  color: #fff;
+  /* font-size: 26px; */
+  text-shadow: 2px 2px #000000;
+  font-weight: bold;
+}
+#h1Produit{
+  margin-bottom: 16rem;
+  color: #fff;
+  /* font-size: 26px; */
+  text-shadow: 2px 2px #000000;
+  font-weight: bold;
+}
+#h1Maison{
+  margin-bottom: 12.5rem;
+  color: #fff;
+  /* font-size: 24px; */
+  text-shadow: 2px 2px #000000;
+  font-weight: bold;
+}
+#h1Savoir{
+  margin-bottom: 16rem;
+  color: #fff;
+  /* font-size: 26px; */
+  text-shadow: 2px 2px #000000;
+  font-weight: bold;
+}
+.carousel-caption p{
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: bold;
+  /* margin-bottom: 18rem; */
+  text-shadow: 2px 2px #000000;
+}
+#img{
+  height: 507px;
+}
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.one {
+-webkit-animation-delay: 0.4s;
+-moz-animation-delay: 0.4s;
+animation-delay: 0.4s;
+}
+.two {
+-webkit-animation-delay: 1.0s;
+-moz-animation-delay: 1.0s;
+animation-delay: 1.0s;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
 
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.carouselButton {
+  transition: 0.5s;
+  display:none;
+}
+#carouselExampleControls:hover .carousel-control-prev, #carouselExampleControls:hover .carousel-control-next {
+  display:block;
+}
+.carousel-control-prev-icon {
+  margin-top: 17rem;
+}
+.carousel-control-next-icon {
+  margin-top: 17rem;
+}
+@media screen and (min-width: 200px) and (max-width: 374px) {
+  #presentation #carouselExampleControls{
+    width: 100%;
+    height: 100%;
+  }
+  #img{
+    height: 100%;
+  }
+  .carousel-control-prev-icon {
+    display: none;
+  }
+  .carousel-control-next-icon {
+    display: none;
+  }
+  #h1HANAMI{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  #h1Produit{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  #h1Maison{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  #h1Savoir{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .carousel-caption p{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 0;
+  }
+  #pSavoir{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: -30px;
+  }
+  #pMaison{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: -35px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 450px) {
+  #presentation #carouselExampleControls{
+    width: 100%;
+    height: 100%;
+  }
+  #img{
+    height: 100%;
+  }
+  .carousel-control-prev-icon {
+    display: none;
+  }
+  .carousel-control-next-icon {
+    display: none;
+  }
+  #h1HANAMI{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 90px;
+  }
+  #h1Produit{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 90px;
+  }
+  #h1Maison{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  #h1Savoir{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 90px;
+  }
+  .carousel-caption p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: -20px;
+  }
+  #pSavoir{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: -20px;
+  }
+  #pMaison{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: -20px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 540px) {
+  #presentation #carouselExampleControls{
+    width: 100%;
+    height: 100%;
+  }
+  #img{
+    height: 100%;
+  }
+  .carousel-control-prev-icon {
+    display: none;
+  }
+  .carousel-control-next-icon {
+    display: none;
+  }
+  #h1HANAMI{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 100px;
+  }
+  #h1Produit{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 100px;
+  }
+  #h1Maison{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  #h1Savoir{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 80px;
+  }
+  .carousel-caption p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 40px;
+  }
+  #pSavoir{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 40px;
+  }
+  #pMaison{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 640px) {
+  #presentation #carouselExampleControls{
+    width: 100%;
+    height: 100%;
+  }
+  #img{
+    height: 100%;
+  }
+  .carousel-control-prev-icon {
+    display: none;
+  }
+  .carousel-control-next-icon {
+    display: none;
+  }
+  #h1HANAMI{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  #h1Produit{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  #h1Maison{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  #h1Savoir{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    /* margin-top: 25px; */
+  }
+  .carousel-caption p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 40px;
+  }
+  #pSavoir{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 40px;
+  }
+  #pMaison{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 780px) {
+  #presentation #carouselExampleControls{
+    width: 100%;
+    height: 100%;
+  }
+  #img{
+    height: 100%;
+  }
+  .carousel-control-prev-icon {
+    display: none;
+  }
+  .carousel-control-next-icon {
+    display: none;
+  }
+  #h1HANAMI{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  #h1Produit{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  #h1Maison{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  #h1Savoir{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 25px;
+    /* margin-top: 25px; */
+  }
+  .carousel-caption p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 100px;
+  }
+  #pSavoir{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 100px;
+  }
+  #pMaison{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 100px;
+  }
+}
 /******************************************************************************/
 /********************************FIN PRESENTATION******************************/
 /******************************************************************************/
@@ -199,7 +678,69 @@
 /******************************************************************************/
 /********************************FOOTER****************************************/
 /******************************************************************************/
+#gmap_canvas {
+  height:440px;
+  width:700px;
+}
+#footcolor {
+  background-image: linear-gradient(to right, #f26d7f, #f7c642);
+  border-top: solid 2px #FFF;
+}
+.foosize {
+  font-size: 5em;
+  padding-top: 0.5em;
+}
+.foosize3 {
+  font-size: 2.5em;
+  color: #bc002d;
+}
+.foosize3:hover{
+  color: #d45c79;
+  cursor: pointer;
+}
+.foosize2 {
+  font-size: 2.5em;
+  padding-top: 0.5em;
+}
+.footcent {
+  text-align: center;
+  vertical-align: middle;
+}
+.footcolor {
+  color: #FFF;
+}
+.footcolor2:hover {
+  color: gray;
+}
+.contefoot {
+  overflow:hidden;
+  height:300px;
+  width:600px;
+}
+#googleMapsA{
+  display: none;
+}
+@media (max-width: 600px) {
+  .contefoot{
+    display: none;
+}
+  html{
+    overflow-x: hidden;
+  }
+  #googleMapsA{
+    display: block;
+  }
+  .foosize2 {
+    font-size: 1.75em;
+    padding-top: 0.5em;
+  }
+}
 
+.hr2018 {
+  top: 10px;
+  border: 1px solid #FFF;
+}
 /******************************************************************************/
+
 /********************************FIN FOOTER************************************/
 /******************************************************************************/
